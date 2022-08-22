@@ -1,3 +1,3 @@
-#!bin/usr/python3
+#!/usr/bin/python3
 number = 3.14159
-print("Float: %s\n"%(round(number,1)));
+print('Float: {:04.2f}'.format(number))

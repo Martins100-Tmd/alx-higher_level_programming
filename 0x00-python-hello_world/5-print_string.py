@@ -1,5 +1,5 @@
 #!/usr/bin/python3
 str = "Holberton School"
-l=str*3;
-c=str[:9];
-print("%s\n%s\n"%(l,c));
+print(str * 3)
+
+print(str[0:9])
