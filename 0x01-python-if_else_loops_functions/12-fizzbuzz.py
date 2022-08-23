@@ -8,4 +8,4 @@ def fizz():
         elif(i%3==0):
             print("Fizz ")
         else:
-            print("{} ".format((i))
+            print(i)
