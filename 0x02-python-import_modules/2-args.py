@@ -14,4 +14,4 @@ if __name == "__main__":
         print("{:d} arguments.".format(arg_num))
         while i < arg_num:
             print("{:d}: {:s}".format(i, sys.argv[i]))
-            i += 1
+            i +!= 1
