@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 def no_c(my_string):
     strList=list()
-    sr=''
+    sr = ""
     for i in range(len(my_string)):
         strList.append(my_string[i])
     if 'C' in strList:
@@ -10,4 +10,4 @@ def no_c(my_string):
         strList.remove('c')
     for i in range(len(strList)):
         sr += strList[i]
-    return sr
+    return (sr)
