@@ -9,5 +9,5 @@ def no_c(my_string):
     elif 'c' in strList:
         strList.remove('c')
     for i in range(len(strList)):
-        sr+=strList[i]
+        sr += strList[i]
     return sr
