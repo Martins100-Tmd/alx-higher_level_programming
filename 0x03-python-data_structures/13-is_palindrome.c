@@ -1,6 +1,9 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include "lists.h"
+/**
+ * ispalindrome - function to check for a palindrome linked list
+ * @head: pointer to a pointer pointing to a struct
+ * Return: integer
+ */
 int isPalindrome(listint_t **head)
 {
     listint_t *help = *head, *some = *head, *rome = *head;
