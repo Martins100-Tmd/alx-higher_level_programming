@@ -4,10 +4,7 @@ def no_c(my_string):
     sr = ""
     for i in range(len(my_string)):
         strList.append(my_string[i])
-    if 'C' in strList:
-        strList.remove('C')
-    elif 'c' in strList:
-        strList.remove('c')
     for i in range(len(strList)):
-        sr += strList[i]
+        if strList[i] != 'C' and strList[i] != 'c':
+            sr+=strList[i];
     return (sr)
