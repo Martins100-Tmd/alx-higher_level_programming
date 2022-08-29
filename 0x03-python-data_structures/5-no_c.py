@@ -7,4 +7,4 @@ def no_c(my_string):
     for i in range(len(strList)):
         if strList[i] != 'C' and strList[i] != 'c':
             sr += strList[i];
-    return (sr)
+    return sr
