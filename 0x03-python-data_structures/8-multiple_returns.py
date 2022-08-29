@@ -4,7 +4,7 @@ def multiple_returns(sentence):
     if sentence:
         for i in sentence:
             count = count + 1
+        First = sentence[0]
     else:
-        return None
-    firstChar = sentence[0]
+        First = None
     return (count, firstChar)
