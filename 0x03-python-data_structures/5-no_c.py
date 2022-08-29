@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 def no_c(my_string):
-    strList=list()
+    strList = list()
     sr = ""
     for i in range(len(my_string)):
         strList.append(my_string[i])
