@@ -4,7 +4,7 @@
  * @head: pointer to a pointer pointing to a struct
  * Return: integer
  */
-int isPalindrome(listint_t **head)
+int is_palindrome(listint_t **head)
 {
     listint_t *help = *head, *some = *head, *rome = *head;
     int i = 0, countcopy;
