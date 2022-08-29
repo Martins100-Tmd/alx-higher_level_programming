@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- * ispalindrome - function to check for a palindrome linked list
+ * is_palindrome - function to check for a palindrome linked list
  * @head: pointer to a pointer pointing to a struct
  * Return: integer
  */
