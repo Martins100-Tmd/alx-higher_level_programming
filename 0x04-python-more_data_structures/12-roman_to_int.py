@@ -9,7 +9,6 @@ def roman_to_int(roman_string):
             'V': 5,
             'I': 1
         }
-
         total = 0
         prev = 0
         for i in range(len(roman_string)):
