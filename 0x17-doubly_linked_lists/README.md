@@ -1,1 +1,1 @@
-Doubly Linked list -> C
+Doubly Linked Lists
