@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 
 add_integer = __import__('0-add_integer').add_integer
+import random
 
-print(add_integer(100, 90))
-print(add_integer(None,10))
-print(add_integer("string", None))
+n = random.randint(0, 1000)
+print(n)
+print(add_integer(100, n))
