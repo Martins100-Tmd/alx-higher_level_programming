@@ -52,7 +52,6 @@ class Rectangle:
         if self.__width == 0 or self.__height == 0:
             return (0)
         return ((self.__width * 2) + (self.__height *2))
-
     def __str__(self):
         """method: __str__
         return: nice string representation of rectangle
@@ -65,7 +64,6 @@ class Rectangle:
             if (idx + 1) < self.__height:
                 ret_str += '\n'
         return (ret_str)
-
     def __repr__(self):
         """Return the string representation of the Rectangle."""
         rect = "Rectangle(" + str(self.__width)
@@ -73,7 +71,7 @@ class Rectangle:
         return (rect)
 
     def __del__(self):
-        """__del__ method .
+        """__del__ method.
 
         prints "bye" message when an instance of the Rectangle class is deleted
         """
