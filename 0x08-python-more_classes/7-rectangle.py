@@ -59,10 +59,10 @@ class Rectangle:
         """
         ret_str = ""
         if self.__height == 0 or self.__width == 0:
-            return ""
+            return ("")
         for idx in range(self.__height):
             ret_str += str(self.print_symbol) * self.width
-            if idx + 1 < self.__height:
+            if (idx + 1) < self.__height:
                 ret_str += '\n'
         return (ret_str)
 
