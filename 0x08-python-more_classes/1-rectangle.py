@@ -18,7 +18,7 @@ class Rectangle:
                 1. If width is less than 0
                 2. If height is less than 0
     """
-    def __init__(self, width=0, height=0):
+    def __init__(self, width = 0, height = 0):
         self.width = width
         self.height = height
 
