@@ -104,6 +104,20 @@ class Rectangle:
         ret_str += str(self.__height) + ")"
         return ret_str
 
+    @staticmethod
+    def bigger_or_equal(rect_1, rect_2):
+        """Returns the biggest rectangle based on the area."""
+        if not isinstance(rect_1, Rectangle):
+            raise TypeError("rect_1 must be an instance of Rectangle")
+        elif not isinstance(rect_2, Rectangle):
+            raise TypeError("rect_2 must be an instance of Rectangle")
+        elif rect_1.area() == rect_2.area():
+            return (rect_1)
+        elif rect_1.area() > rect_2.area():
+            return (rect_1)
+        elif rect_2.area() > rect_1.area():
+            return (rect_2)
+
     def __del__(self):
         '''method: __del__
            deletes instance of Rectangle class, and prints "bye" message
