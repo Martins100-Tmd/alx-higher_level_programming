@@ -24,6 +24,6 @@ class Rectangle(BaseGeometry):
 
     def __str__(self):
         """Returns a formatted result"""
-        string = "[" + self.__class__.__name__ + "]"
+        string = "[" + self.__class__.__name__ + "] "
         string += str(self.width) + "/" + str(self.height)
         return string
