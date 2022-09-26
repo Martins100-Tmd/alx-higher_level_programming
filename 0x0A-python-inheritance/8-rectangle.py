@@ -1,12 +1,16 @@
 #!/usr/bin/python3
-"""Defines a base geometry class BaseGeometry"""
+'''
+    Implementing a Geometry class
+'''
 
 
-BaseGeometry = __import__('7-base_geometry').BaseGeometry
+BaseGeometry = __import__("7-base_geometry").BaseGeometry
 
 
 class Rectangle(BaseGeometry):
-    """Rectangle a sub-class to BaseGeometry"""
+    '''
+        Implements a rectangle
+    '''
     def __init__(self, width, height):
         self.integer_validator("width", width)
         self.integer_validator("height", height)
