@@ -14,16 +14,16 @@ class Rectangle(BaseGeometry):
             height (int): The height of the new Rectangle.
         """
         super().integer_validator("width", width)
-        super().__width = width
+        self.__width = width
         super().integer_validator("height", height)
         self.__height = height
 
-    def Area(self):
-        """Defines an Area function"""
-        return self.width * self.height
+    def area(self):
+        """Return the area of the rectangle."""
+        return self.__width * self.__height
 
     def __str__(self):
-        """Returns a formatted result"""
-        string = "[" + self.__class__.__name__ + "] "
-        string += str(self.width) + "/" + str(self.height)
+        """Return the print() and str() representation of a Rectangle."""
+        string = "[" + str(self.__class__.__name__) + "] "
+        string += str(self.__width) + "/" + str(self.__height)
         return string
