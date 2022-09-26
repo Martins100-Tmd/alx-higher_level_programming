@@ -20,7 +20,7 @@ class Rectangle(BaseGeometry):
 
     def Area(self):
         """Defines an Area function"""
-        return int(self.width * self.height)
+        return self.width * self.height
 
     def __str__(self):
         """Returns a formatted result"""
