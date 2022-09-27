@@ -16,7 +16,7 @@ def append_write(filename="", text=""):
         len1 = f.tell()
         f.write(text)
         len2 = f.tell()
-        len = len1-len2
+        len = len1 - len2
         if len < 0:
             return -1 * len
         return len
