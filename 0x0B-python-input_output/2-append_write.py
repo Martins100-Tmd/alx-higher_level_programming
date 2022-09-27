@@ -3,6 +3,14 @@
 
 
 def append_write(filename="", text=""):
+    """
+    Args:
+        filename(file): file to be add to
+        text(string): string to add to filename
+
+    Error:
+        No errors
+    """
     with open(filename, 'r+', encoding='utf-8') as f:
         f.read()
         len1 = f.tell()
