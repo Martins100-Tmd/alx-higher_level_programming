@@ -11,6 +11,6 @@ def read_file(filename=""):
     Error:
         No error to be handled
     """
-    with open(filename, 'r', encoding='utf-8') as f:
+    with open(filename, "r+", encoding="utf-8") as f:
         f_read = f.read()
         print(f_read)
