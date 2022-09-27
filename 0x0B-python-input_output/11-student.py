@@ -18,6 +18,7 @@ class Student:
         '''method to_json
         '''
         return self.__dict__
+
     def reload_from_json(self, json):
         '''
         method to setattr to replace all attr of student instance
