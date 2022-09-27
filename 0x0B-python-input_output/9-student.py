@@ -17,4 +17,5 @@ class Student:
         self.age = age
 
     def to_json(self):
+        """return __dict__ of the new class instance"""
         return {'first_name': self.first_name, 'last_name': self.last_name, 'age': self.age}
