@@ -13,5 +13,5 @@ def save_to_json_file(my_obj, filename):
     Error:
         No error
     """
-    with open(filename, 'r+', encoding='utf-8') as f:
+    with open(filename, 'w') as f:
         f.write(json.dumps(my_obj))
