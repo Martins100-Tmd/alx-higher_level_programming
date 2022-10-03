@@ -4,15 +4,11 @@ from base import Base
 
 
 class Rectangle(Base):
-    """
-    Defining the Rectangle class
-    Inherits from:
-        Base
-    """
+    """Rectangle class"""
 
     def __init__(self, width, height, x=0, y=0, id=None):
         """
-        Rectangle class init
+        Rectangle class init.
 
         Args:
             width(int): width of rectangle
@@ -34,45 +30,35 @@ class Rectangle(Base):
 
     @property
     def width(self):
-        """
-        Returning private attribute
-        """
+        """return the private attribute x."""
         return self.__width
 
     @width.setter
     def width(self, value):
-        """
-        Setting private attribute
-        """
-        if type(value) is not int:
-            raise TypeError("height must be an integer")
-        if value <= 0:
-            raise ValueError("height must be > 0")
-        self.__width = value
-
-    @property
-    def height(self):
-        """
-        Returning private attribute
-        """
-        return self.__height
-
-    @height.setter
-    def height(self, value):
-        """
-        Setting private attribute
-        """
+        """set the private attribute."""
         if type(value) is not int:
             raise TypeError("width must be an integer")
         if value <= 0:
             raise ValueError("width must be > 0")
+        self.__width = value
+
+    @property
+    def height(self):
+        """return the private attribute height."""
+        return self.__height
+
+    @height.setter
+    def height(self, value):
+        """set the private attribute height."""
+        if type(value) is not int:
+            raise TypeError("height must be an integer")
+        if value <= 0:
+            raise ValueError("height must be > 0")
         self.__height = value
 
     @property
     def x(self):
-        """
-        Returning private attribute
-        """
+        """return the private instance attribute x."""
         return self.__x
 
     @x.setter
@@ -114,7 +100,7 @@ class Rectangle(Base):
 
         if self.width == 0 or self.height == 0:
             print("")
-            return;
+            return
 
         for i in range(self.height):
             str = ''
@@ -130,9 +116,8 @@ class Rectangle(Base):
         return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.x, self.y, self.width, self.height)
 
     def update(self, *args):
-        """Assign each elements in the args list to the insatcne attribute
-
+        """Assign each elements in the args list to the instance attribute
         Args:
             args(tuple): unknown number of elements
         """
-        return;
+        return
