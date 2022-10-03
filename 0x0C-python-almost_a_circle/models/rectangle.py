@@ -12,6 +12,16 @@ class Rectangle(Base):
     """
 
     def __init__(self, width, height, x=0, y=0, id=None):
+        """
+        Rectangle class init
+
+        Args:
+            width(int): width of rectangle
+            height(int): height of rectangle
+            x(int): x
+            y(int): y
+            id(int): id of new instance
+        """
         self.width = width
         self.height = height
         self.x = x
@@ -92,10 +102,12 @@ class Rectangle(Base):
 
     def area(self):
         """area returns the area of the rectangle"""
+
         return (self.width) * (self.height)
 
     def display(self):
         """Display the rectangle in symbolic form"""
+
         if self.width == 0 or self.height == 0:
             print("")
             return;
@@ -110,6 +122,7 @@ class Rectangle(Base):
 
     def __str__(self):
         """overriding inbuilt __str__method to print a formatted string"""
+
         return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.x, self.y, self.width, self.height)
 
     def update(self, *args):
