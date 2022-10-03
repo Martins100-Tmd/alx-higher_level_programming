@@ -2,7 +2,6 @@
 """Define a Base class"""
 
 
-
 class Base:
     """Base class created"""
 
