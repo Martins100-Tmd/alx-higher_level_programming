@@ -133,4 +133,4 @@ class Rectangle(Base):
         Args:
             args(tuple): unknown number of elements
         """
-
+        return;
