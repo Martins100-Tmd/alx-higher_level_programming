@@ -1,8 +1,5 @@
 #!/usr/bin/python3
-"""
-    Class Rectangle
-"""
-
+"""Class Rectangle"""
 from base import Base
 
 
@@ -23,6 +20,11 @@ class Rectangle(Base):
             x(int): x
             y(int): y
             id(int): id of new instance
+        Error:
+            TypeError: If either height or width is not a number]
+            ValueError: If either width or height is less than equals to zero
+            TypeError: If either x or y is not a number
+            ValueError: If either x or y is less than zero
         """
         self.width = width
         self.height = height
