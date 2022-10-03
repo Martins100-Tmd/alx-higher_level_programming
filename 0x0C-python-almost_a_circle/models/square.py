@@ -1,39 +1,35 @@
 #!/usr/bin/python3
-"""Define a square class"""
-from rectangle import Rectangle
+"""Defines a square class."""
+from models.rectangle import Rectangle
 
 
 class Square(Rectangle):
-    """Square init."""
+    """Represent a square."""
 
     def __init__(self, size, x=0, y=0, id=None):
-        """New instance of Square.
+        """Initialize a new Square.
 
         Args:
-            size(int): size of square
-            x(int): x
-            y(int): y
-            id(int): id of the new class instance
+            size (int): The size of the new Square.
+            x (int): The x coordinate of the new Square.
+            y (int): The y coordinate of the new Square.
+            id (int): The identity of the new Square.
         """
-        super()__init(id, x, y, size, size)
+        super().__init__(size, size, x, y, id)
 
     @property
     def size(self):
-        """return the size attr."""
-        return self.size
+        """Get/set the size of the Square."""
+        return self.width
 
     @size.setter
-    def size(self):
-        """set size"""
-        self.width = size
-        self.height = size
-
-    def __str__(self):
-        """returns the string representation of the Square class"""
-        return "[Square] ({}) {}/{} - {}".format(self.id, self.x, self.y, self.height)
+    def size(self, value):
+        self.width = value
+        self.height = value
 
     def update(self, *args, **kwargs):
         """Update the Square.
+
         Args:
             *args (ints): New attribute values.
                 - 1st argument represents id attribute
@@ -80,3 +76,8 @@ class Square(Rectangle):
             "x": self.x,
             "y": self.y
         }
+
+    def __str__(self):
+        """Return the print() and str() representation of a Square."""
+        return "[Square] ({}) {}/{} - {}".format(self.id, self.x, self.y,
+                                                 self.width)
