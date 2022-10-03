@@ -2,6 +2,7 @@
 """
     Class Rectangle
 """
+
 from base import Base
 
 
