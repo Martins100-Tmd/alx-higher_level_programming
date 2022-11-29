@@ -11,7 +11,11 @@ if (process.argv[2]) {
         sum += 'X';
         i++;
       }
-      console.log(sum);
+      i = 0;
+      while (i < num) {
+	console.log(sum);
+	i++;
+      }
     }
   }
 } else {
