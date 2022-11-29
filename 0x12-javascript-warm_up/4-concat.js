@@ -1,9 +1,7 @@
 #!/usr/bin/node
 const process = require('process');
-if (process.argv.length > 2) {
-  const a =
-    process.argv.length[2] !== null ? process.argv.length[2] : undefined;
-  const b =
-    process.argv.length[3] !== null ? process.argv.length[3] : undefined;
+if (process.argv) {
+  const a = process.argv[2];
+  const b = process.argv[3];
   console.log(a + ' is ' + b);
 }
