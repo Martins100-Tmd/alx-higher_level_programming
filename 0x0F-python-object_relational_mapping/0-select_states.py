@@ -11,7 +11,7 @@ in a database
 if __name__ == "__main__":
     conn = MYSQLdb.connect(
          host="localhost", port=3306, user=argv[1],
-         passwd=argv[2], db=argv[3], charset="utf-8")
+         password=argv[2], database=argv[3], charset="utf-8")
     cur = conn.cursor()
     cur.execute("SELECT * FROM states ORDER BY id ASC")
     table_rows = cur.fetchall()
