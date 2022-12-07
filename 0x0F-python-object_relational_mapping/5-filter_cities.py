@@ -9,7 +9,7 @@ list all cities in state
 '''
 
 if__name__ == "__main__":
-    state_name =argv[4].strip("'\"")
+    state_name = argv[4].strip("'\"")
     conn = MySQLdb.connect(
             host="localhost",
             port=3306,
@@ -27,7 +27,7 @@ if__name__ == "__main__":
     j = 0
     for i in result:
         print(i[2], end="")
-        if(j != (len(result) -1)):
+        if j != (len(result) - 1):
             print(", ", end="")
         j = j + 1
 
