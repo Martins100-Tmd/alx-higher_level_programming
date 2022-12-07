@@ -5,7 +5,6 @@ from sys import argv
 list row for which name matches argument
 '''
 if __name__ == "__main__":
-
     username = argv[1]
     password = argv[2]
     database = argv[3]
