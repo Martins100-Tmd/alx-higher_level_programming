@@ -3,6 +3,7 @@
 
 import MySQLdb
 from sys import argv
+
 '''
 list row for which name matches argument
 '''
