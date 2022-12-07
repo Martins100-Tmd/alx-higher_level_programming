@@ -1,31 +1,32 @@
 #!/usr/bin/python3
-
-
-import MySQLdb
-from sys import argv
-
-'''
-Select row where name starts with letter "N"
-'''
-
-
+"""
+list all states with a name starting with
+`N` from the database
+"""
 if __name__ == "__main__":
+    import MySQLdb
+    from sys import argv
 
-    conn = MySQLdb.connect(
+    username = argv[1]
+    password = argv[2]
+    database = argv[3]
+
+    db = MySQLdb.connect(
             host="localhost",
             port=3306,
-            user=argv[1],
-            password=argv[2],
-            database=argv[3],
+            user=username,
+            passwd=password,
+            db=database
             )
 
-    cursor = conn.cursor()
+    c = db.cursor()
 
-    cursor.execute("SELECT * FROM states WHERE name like BINARY 'N%' ORDER BY id ASC")
+    sql_cmd = "SELECT DISTINCT * FROM states WHERE name like BINARY 'N%' ORDER BY id ASC"
 
-    db = cursor.fetchall()
+    c.execute(sql_cmd)
+    result = c.fetchall()
 
-    for i in db:
-        print(i)
-    cursor.close()
-    conn.close()
+    print(result)
+
+    c.close()
+    db.close()

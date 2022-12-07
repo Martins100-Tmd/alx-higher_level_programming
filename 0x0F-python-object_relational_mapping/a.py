@@ -21,8 +21,7 @@ if __name__ == "__main__":
 
     c = db.cursor()
 
-    sql_cmd = "SELECT * FROM states WHERE name\
-        like BINARY 'N%' ORDER BY id ASC"
+    sql_cmd = "SHOW *"
 
     c.execute(sql_cmd)
     result = c.fetchall()
@@ -32,3 +31,4 @@ if __name__ == "__main__":
 
     c.close()
     db.close()
+
