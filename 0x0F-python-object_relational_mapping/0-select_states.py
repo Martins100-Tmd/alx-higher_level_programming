@@ -1,4 +1,5 @@
-i#!/usr/bin/python3
+#!/usr/bin/python3
+
 """
 connect to mysql server and lists all states
 using the mysqldb api
