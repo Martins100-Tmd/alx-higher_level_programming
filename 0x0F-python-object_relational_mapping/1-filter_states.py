@@ -20,11 +20,9 @@ if __name__ == "__main__":
             )
 
     c = db.cursor()
+    comd = "name like BINARY 'N%' ORDER BY id ASC"
 
-    sql_cmd = "
-    SELECT DISTINCT * FROM states WHERE name like BINARY 'N%' ORDER BY id ASC"
-
-    c.execute(sql_cmd)
+    c.execute("SELECT DISTINCT * FROM states WHERE" + comd)
     result = c.fetchall()
 
     for i in result:
