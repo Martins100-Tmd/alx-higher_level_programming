@@ -28,8 +28,8 @@ if __name__ == "__main__":
 
     db = cursor.fetchall()
 
-    L = list(db)
-    if L[0][1] == L[1][1]:
-        print(L[0])
+    for i in db:
+        if i[1] == name:
+            print(i)
     cursor.close()
     conn.close()

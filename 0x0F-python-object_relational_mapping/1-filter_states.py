@@ -26,7 +26,7 @@ if __name__ == "__main__":
     c.execute(sql_cmd)
     result = c.fetchall()
 
-    print(result)
-
+    for i in result:
+        print(i)
     c.close()
     db.close()

@@ -21,7 +21,7 @@ if __name__ == "__main__":
 
     c = db.cursor()
 
-    sql_cmd = "SHOW *"
+    sql_cmd = "DROP TABLE states"
 
     c.execute(sql_cmd)
     result = c.fetchall()
