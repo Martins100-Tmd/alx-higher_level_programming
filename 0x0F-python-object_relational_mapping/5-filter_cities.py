@@ -8,7 +8,7 @@ from sys import argv
 list all cities in state
 '''
 
-if__name__ == "__main__":
+if __name__ == "__main__":
     state_name = argv[4].strip("'\"")
     conn = MySQLdb.connect(
             host="localhost",
