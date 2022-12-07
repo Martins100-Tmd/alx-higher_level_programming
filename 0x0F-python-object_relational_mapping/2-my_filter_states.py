@@ -24,8 +24,8 @@ if __name__ == "__main__":
             )
     cursor = conn.cursor()
     cursor.execute(
-            "SELECT * FROM states WHERE name LIKE '{:s}'"
-            " ORDER BY id ASC".format(name))
+            "SELECT * FROM states WHERE name LIKE '{:s}'\
+            ORDER BY id ASC".format(name))
 
     db = cursor.fetchall()
 
