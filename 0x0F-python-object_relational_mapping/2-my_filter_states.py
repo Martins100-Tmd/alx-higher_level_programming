@@ -22,12 +22,14 @@ if __name__ == "__main__":
             db=database
             )
     cursor = conn.cursor()
-    cursor.execute("SELECT * FROM states WHERE name LIKE '{:s}'"
+    cursor.execute(
+            "SELECT * FROM states WHERE name LIKE '{:s}'"
             " ORDER BY id ASC".format(name))
 
     db = cursor.fetchall()
 
-    for i in db:
-        print(i)
+    L = list(db)
+    if L[0][1] == L[1][1]:
+        print(L[0])
     cursor.close()
     conn.close()
