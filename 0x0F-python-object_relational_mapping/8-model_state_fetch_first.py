@@ -16,7 +16,11 @@ if __name__ == "__main__":
     url = "mysql://{}:{}@localhost:3306/{}"\
         .format(username, password, database)
     engine = create_engine(url, echo=False)
-    qry = engine.execute("SELECT * from states WHERE id=1")
-    db = qry.fetchall()
+    qry = engine.execute("SELECT * from states ORDER BY id ASC")
+    db = qry.fetchone()
     db = db[0]
-    print("{}: {}".format(db[0], db[1]))
+
+    if db:
+        print("{}: {}".format(db[0], db[1]))
+    else:
+        print("Nothing")
