@@ -18,8 +18,6 @@ if __name__ == "__main__":
     engine = create_engine(url, echo=False)
     qry = engine.execute("SELECT * from states ORDER BY id ASC")
     db = qry.fetchone()
-    db = db[0]
-
     if db:
         print("{}: {}".format(db[0], db[1]))
     else:
