@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-
+'''
+Select all items in the states table
+'''
 
 from sqlalchemy import create_engine
 from sys import argv
