@@ -1,12 +1,14 @@
 #!/usr/bin/python3
 
+'''
+Select all the states with name equals to
+the argument four
+'''
 
 import MySQLdb
 from sys import argv
 
-'''
-Script that lists all states from the database
-'''
+
 if __name__ == "__main__":
     cont = MySQLdb.connect(
         host="localhost", port=3306, user=argv[1],
