@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-
 '''
 prints the first state object from the database
 '''
