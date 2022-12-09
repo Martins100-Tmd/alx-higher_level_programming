@@ -1,21 +1,23 @@
 #!/usr/bin/python3
+"""
+module to create class for table
+"""
 
-from sqlalchemy import Column, Integer, String
+import sqlalchemy
+from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy import Column, Integer, String
 
 Base = declarative_base()
 
 
 class State(Base):
-    '''
-    State class:
-    inherits from Base
-    links to the MySQL table states
-    class attribute id that represents a column of an auto-generated,
-    unique integer, cant be null and is primary key
-    class atrribute name that represent a column of string with max
-    char of 128 can;t be null also
-    '''
+    """
+    class state to represent state table.
+    """
+
     __tablename__ = 'states'
-    id = Column(Integer, primary_key=True, nullable=False, autoincrement=True)
+
+    id = Column(Integer, primary_key=True, autoincrement=True, nullable=False)
     name = Column(String(128), nullable=False)
+
