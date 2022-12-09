@@ -1,12 +1,13 @@
 #!/usr/bin/python3
 
+'''
+Select row for which state_id is equals
+to name is argument name
+'''
 
 import MySQLdb
 from sys import argv
 
-'''
-list all cities in state
-'''
 
 if __name__ == "__main__":
     state_name = argv[4].strip("'\"")
