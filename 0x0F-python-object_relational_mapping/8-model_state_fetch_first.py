@@ -1,12 +1,12 @@
 #!/usr/bin/python3
 '''
 prints the first state object from the database
+with ORM
 '''
 
 from sqlalchemy import create_engine
 from sys import argv
 from model_state import Base, State
-
 
 if __name__ == "__main__":
     username = argv[1]
