@@ -17,7 +17,9 @@ if (process.argv[2]) {
 	i++;
       }
     }
+  }else{
+	  console.log('Missing size');
   }
-} else {
-  console.log('Missing size');
+}else{
+	console.log('Missing size');
 }
