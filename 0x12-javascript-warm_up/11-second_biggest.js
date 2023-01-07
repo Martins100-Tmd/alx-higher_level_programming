@@ -7,6 +7,8 @@ let array = process.argv.slice(2).map((item) => {
 });
 if (process.argv.length === 2) {
   console.log(0);
+} else if (array.length === 1) {
+  console.log(array[0]);
 } else {
   array = array.sort((a, b) => {
     return a - b;
