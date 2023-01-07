@@ -8,11 +8,11 @@ function RecurseFac (b, start = 1) {
     return;
   }
   if (b === 1) {
-    console.log(start * num);
+    console.log(start);
     return 1;
   }
-  --b;
   start *= b;
+	b--;
   return RecurseFac(b, start);
 }
 RecurseFac(num);
