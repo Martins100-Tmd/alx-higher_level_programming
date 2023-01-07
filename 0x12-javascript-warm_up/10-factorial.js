@@ -12,7 +12,7 @@ function RecurseFac (b, start = 1) {
     return 1;
   }
   start *= b;
-	b--;
+  b--;
   return RecurseFac(b, start);
 }
 RecurseFac(num);
