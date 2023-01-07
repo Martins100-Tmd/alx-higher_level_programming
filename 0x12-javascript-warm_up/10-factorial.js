@@ -3,7 +3,10 @@
 const process = require('process');
 const num = Math.floor(parseInt(process.argv[2]));
 function RecurseFac (b, start = 1) {
-  if (!b) console.log(1);
+  if (!b || isNaN(b)) {
+    console.log(1);
+    return;
+  }
   if (b === 1) {
     console.log(start * num);
     return 1;
