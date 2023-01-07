@@ -1,9 +1,6 @@
 #!/usr/bin/node
-// write a script that calls a function x times
-
-exports.callMeMoby = function (x, func) {
-  while (x !== 0) {
-    func();
-    --x;
+exports.callMeMoby = function (var1, callback) {
+  for (let i = 0; i < var1; i++) {
+    callback(var1);
   }
 };
