@@ -13,13 +13,13 @@ if (process.argv[2]) {
       }
       i = 0;
       while (i < num) {
-	console.log(sum);
-	i++;
+        console.log(sum);
+        i++;
       }
     }
-  }else{
-	  console.log('Missing size');
+  } else {
+    console.log('Missing size');
   }
-}else{
-	console.log('Missing size');
+} else {
+  console.log('Missing size');
 }
